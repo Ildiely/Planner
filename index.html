@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Link que conecta o CSS ao HTML: -->
+ <link rel="stylesheet" href="./style.css">
+
+    <title>Meu Planner</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal da página -->
+
+    <header>
+
+        <h1>Meu Planner Diário 🗓️</h1>
+        <p>Organize o seu dia e alcance suas metas!</p>
+
+    </header>
+
+    <!-- Conteúdo principal do documento -->
+
+    <main>
+
+        <!-- Sessão do formulário paara adicionar tarefas -->
+
+        <section>
+
+            <h2>Nova Tarefa</h2>
+            <form action="">
+
+                <!-- Grupo 1: Identificação da Tarefa-->
+                <div>
+                    <!-- Campo de texto para o nome da tarefa -->
+                    <label for="tarefa">Descrição da Tarefa:</label>
+                    <input type="text" id="tarefa" name="tarefa" placeholder="Ex: Estudar HTML" required>
+                </div>
+
+                <!-- Grupo 2: Planejamento de Tempo e Prioridade -->
+
+                <div>
+                    <!-- Seletor de data -->
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data">
+
+                    <!-- Campo para escolher o horário/turno -->
+
+                    <label for="periodo">Período:</label>
+                    <select id="periodo" name="periodo">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+
+
+                    <!-- Seletor de prioridade -->
+                    <label for="prioridade">Prioridade:</label>
+
+                    <select id="prioridade" name="prioridade">
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                </div>
+
+                <!-- Grupo 3: Área de Texto Livre (Observações) - Logo Antes do Envio -->
+                <div>
+
+                    <!-- Campo para anotações detalhadas (testo longo) -->
+                    <label for="observacoes">Anotações extras:</label>
+
+                    <!-- rows="4" dá espaço confortável para digitação -->
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="40"
+                        placeholder="Ex: Links úteis, dúvidas a tirar, detalhes..."></textarea>
+
+                </div>
+
+                <!-- Ação Final -->
+                <button type="submit">Adicionar Tarefa</button>
+
+            </form>
+        </section>
+
+        <!-- Seção da Lista de tarefas pendentes -->
+
+        <section>
+
+            <h2>Tarefas de Hoje</h2>
+
+            <!-- Filtros rápidos de visualização -->
+            <nav>
+                <button type="button">Todas</button>
+                <button type="button">Manhã</button>
+                <button type="button">Tarde</button>
+                <button type="button">Noite</button>
+            </nav>
+
+            <ul>
+                <li>
+                    <input type="checkbox" id="item-1">
+                    <label for="item-1">Assistir aula de tags semânticas</label>
+                    <small> - [Manhã | Prioridade: Alta]</small>
+                </li>
+                <li>
+                    <input type="checkbox" id="item-2">
+                    <label for="item-2">Praticar formulários com HTML</label>
+                    <small> - [Tarde | Prioridade: Média]</small>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Seção de Progresso e Metas Extras -->
+
+        <section>
+            <h2>Progresso do Dia</h2>
+
+            <!-- Barra de progresso nativa -->
+            <div>
+                <label for="progresso-tarefas">Tarefas Concluídas: 1 de 2 (50%)</label><br>
+                <progress id="progresso-tarefas" value="50" max="100">50%</progress>
+            </div>
+
+            <!-- Bloco retrátil nativo com details e summary-->
+            <details open>
+                <summary><strong>🎯 Ver Metas da Semana</strong>(clique para expandir)</summary>
+                <ul>
+                    <li>Finalizar a estrutura HTML do Planner</li>
+                    <li>Começar os primeiros passos com CSS</li>
+                    <li>Beber 2 litros de água por dia</li>
+                </ul>
+
+            </details>
+
+        </section>
+
+
+
+    </main>
+
+    <!-- Rodapé da página -->
+
+    <footer>
+        <p>Meu Planner © 2026 - Criado por Ildiely.</p>
+    </footer>
+
+</body>
+
+</html>
