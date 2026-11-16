@@ -1,0 +1,179 @@
+/* 1. Reset básico: remove margens padrão dos navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Estilizando o fundo da página inteira*/
+body {
+    background-color: #D4B5F7;
+    color: #3A425D;
+    padding: 20px;
+}
+
+/* 3. Cabeçalho centralizado*/
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #3A2A64;
+    margin-bottom: 8px;
+}
+
+/* 4. O container principal limitando a largura (para não esticar na tela toda)*/
+main {
+    max-width: 650px;
+    /* Centralizaa o bloco na horizontal */
+    margin: 0 auto;
+}
+
+/* 5. Transformando cada seção em um 'Card' flutuante branco */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* Sombra suave elegante*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 6. Espaçamento nos títulos das seções */
+section h2 {
+    color: #7F7BA3;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #D4B5F7;
+    padding-bottom: 5px;
+}
+
+/* 7. Organizando os campos dos formulário */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 8. Estilizando os campos de digitação e seleções */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* 9. Botão principal chamativo */
+button[type="submit"] {
+    background-color: #3A2A64;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    /* Escurece quando passa o mouse por cima*/
+    background-color: #4a148c;
+}
+
+/* 10. Rodapé discreto */
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* 11. Estilizando os botões de Filtro */
+nav {
+    display: flex;
+    /* Dá espaços entre os botões */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+nav button {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    border: 1px solid #ba68c8;
+    padding: 8px 14px;
+    /* Deixa os botões arredondados em formato de pílula */
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #ba68c8;
+    color: #ffffff;
+}
+
+/* 12. Estilizando a Lista de Tarefas */
+ul {
+    /* Remove as bolinhas pretas padrão */
+    list-style: none;
+}
+
+li {
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    /* Espaço entre o checkbox e o texto */
+    gap: 10px;
+}
+
+/* Deixa o texto com a prioridade mais discreto e cinza */
+li small {
+    color: #888888;
+    /* Empurra a etiqueta de prioridade para o canto direito! */
+    margin-left: auto;
+}
+
+/* 13. Barra de Progresso e Bloco de Metas */
+progress {
+    width: 100%;
+    height: 18px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    /* Pinta a barra de roxo automaticamente */
+    accent-color: #7b1fa2;
+}
+
+details {
+    background-color: #fdf7ff;
+    border: 1px dashed #ce93d8;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+details summary {
+    font-weight: 600;
+    color: #4a148c;
+}
+
+details ul {
+    background: transparent;
+    border: none;
+    padding: 4px 0;
+}
